@@ -53,21 +53,21 @@ app/
 
 ### 🏠 Home Screen
 
-![Home Screen](screenshots/home.png)
+![Home Screen](./screenshots/home.png)
 
 ### 🤖 AI Chat Assistant
 
-![AI Chat Assistant](screenshots/chatbot.png)
+![AI Chat Assistant](./screenshots/chatbot.png)
 
 ### 📊 Level Map
 
-![Level Map](screenshots/levelmap.png)
+![Level Map](./screenshots/levelmap.png)
 
 ### 🌎 Worlds
-![Worlds](screenshots/worlds.png)
+![Worlds](./screenshots/worlds.png)
 
 ### 📈 Tracking
-![Tracking](screenshots/tracking.png)
+![Tracking](./screenshots/tracking.png)
 
 
 
