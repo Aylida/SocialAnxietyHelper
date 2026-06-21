@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.SocialAnxietyHelper" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="appBgColor">#F5F0E8</item>
+        <item name="cardBgColor">#FFFFFF</item>
+        <item name="navBgColor">#F5F5F3</item>
+        <item name="textPrimaryColor">#1A1A1A</item>
+        <item name="textSecondaryColor">#B0A898</item>
+        <item name="android:windowBackground">#F5F0E8</item>
+        <item name="android:statusBarColor">#F5F0E8</item>
+        <item name="android:navigationBarColor">#F5F5F3</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <style name="Theme.SocialAnxietyHelper" parent="Base.Theme.SocialAnxietyHelper"/>
+
+</resources>

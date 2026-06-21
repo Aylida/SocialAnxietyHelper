@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBg">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNav">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <!-- Profil -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="20dp"
+                android:paddingTop="26dp"
+                android:paddingBottom="18dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:layout_marginEnd="14dp"
+                    app:cardCornerRadius="31dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/cardBg">
+                    <ImageView
+                        android:id="@+id/txtProfileEmoji"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/avatarmaker_1"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/txtProfileName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kahraman"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textPrimary"/>
+                    <TextView
+                        android:id="@+id/txtProfileLevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SEVİYE 1"
+                        android:textSize="11sp"
+                        android:textColor="@color/textSecondary"
+                        android:layout_marginTop="3dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- HESAP -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="HESAP" android:textSize="10sp" android:textStyle="bold"
+                android:textColor="@color/textSecondary" android:letterSpacing="0.15"
+                android:layout_marginStart="20dp" android:layout_marginBottom="8dp"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical"
+                android:background="@drawable/card_normal_themed" android:padding="14dp"
+                android:layout_marginHorizontal="16dp" android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/setting_icon_yellow"
+                    android:gravity="center"
+                    android:text="&#x2709;&#xFE0F;" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="E-posta" android:textSize="14sp" android:textStyle="bold"
+                        android:textColor="@color/textPrimary"/>
+                    <TextView android:id="@+id/txtEmailSub" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="11sp"
+                        android:textColor="@color/textSecondary" android:text="&#8212;"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/itemPassword" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal"
+                android:gravity="center_vertical" android:background="@drawable/card_normal_themed"
+                android:padding="14dp" android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="6dp" android:clickable="true" android:focusable="true">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/setting_icon_yellow"
+                    android:gravity="center"
+                    android:text="&#x1F512;" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Şifre Değiştir" android:textSize="14sp" android:textStyle="bold"
+                        android:textColor="@color/textPrimary"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Sıfırlama maili gönderilir" android:textSize="11sp"
+                        android:textColor="@color/textSecondary"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="&#8250;" android:textSize="20sp" android:textColor="@color/textSecondary"/>
+            </LinearLayout>
+
+            <!-- KİŞİSELLEŞTİRME -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="KİŞİSELLEŞTİRME" android:textSize="10sp" android:textStyle="bold"
+                android:textColor="@color/textSecondary" android:letterSpacing="0.15"
+                android:layout_marginStart="20dp" android:layout_marginTop="16dp" android:layout_marginBottom="8dp"/>
+
+            <LinearLayout android:id="@+id/itemName" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal"
+                android:gravity="center_vertical" android:background="@drawable/card_normal_themed"
+                android:padding="14dp" android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="6dp" android:clickable="true" android:focusable="true">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/setting_icon_yellow"
+                    android:gravity="center"
+                    android:text="&#x270F;&#xFE0F;" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Görünen İsim" android:textSize="14sp" android:textStyle="bold"
+                        android:textColor="@color/textPrimary"/>
+                    <TextView android:id="@+id/txtNameSub" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="11sp"
+                        android:textColor="@color/textSecondary"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="&#8250;" android:textSize="20sp" android:textColor="@color/textSecondary"/>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/itemChar" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal"
+                android:gravity="center_vertical" android:background="@drawable/card_normal_themed"
+                android:padding="14dp" android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="6dp" android:clickable="true" android:focusable="true">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/setting_icon_yellow"
+                    android:gravity="center"
+                    android:text="&#x1F3AD;" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Karakter" android:textSize="14sp" android:textStyle="bold"
+                        android:textColor="@color/textPrimary"/>
+                    <TextView android:id="@+id/txtCharSub" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="11sp"
+                        android:textColor="@color/textSecondary"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="&#8250;" android:textSize="20sp" android:textColor="@color/textSecondary"/>
+            </LinearLayout>
+
+            <!-- UYGULAMA -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="UYGULAMA" android:textSize="10sp" android:textStyle="bold"
+                android:textColor="@color/textSecondary" android:letterSpacing="0.15"
+                android:layout_marginStart="20dp" android:layout_marginTop="16dp" android:layout_marginBottom="8dp"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical"
+                android:background="@drawable/card_normal_themed" android:padding="14dp"
+                android:layout_marginHorizontal="16dp" android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/setting_icon_yellow"
+                    android:gravity="center"
+                    android:text="&#x1F30D;" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Dil" android:textSize="14sp" android:textStyle="bold"
+                        android:textColor="@color/textPrimary"/>
+                    <TextView android:id="@+id/txtLangSub" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="11sp"
+                        android:textColor="@color/textSecondary" android:text="TR"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView android:id="@+id/btnLangTR" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="TR" android:textSize="11sp"
+                        android:textStyle="bold" android:paddingHorizontal="12dp" android:paddingVertical="5dp"
+                        android:background="@drawable/pill_dark" android:textColor="#F9E04B" android:layout_marginEnd="6dp"/>
+                    <TextView android:id="@+id/btnLangEN" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="EN" android:textSize="11sp"
+                        android:textStyle="bold" android:paddingHorizontal="12dp" android:paddingVertical="5dp"
+                        android:background="@drawable/pill_gray" android:textColor="#888888"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/itemTheme" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal"
+                android:gravity="center_vertical" android:background="@drawable/card_normal_themed"
+                android:padding="14dp" android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="6dp" android:clickable="true" android:focusable="true">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/setting_icon_yellow"
+                    android:gravity="center"
+                    android:text="&#x1F319;" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Tema" android:textSize="14sp" android:textStyle="bold"
+                        android:textColor="@color/textPrimary"/>
+                    <TextView android:id="@+id/txtThemeSub" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="Açık mod" android:textSize="11sp"
+                        android:textColor="@color/textSecondary"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="&#8250;" android:textSize="20sp" android:textColor="@color/textSecondary"/>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/itemAbout" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal"
+                android:gravity="center_vertical" android:background="@drawable/card_normal_themed"
+                android:padding="14dp" android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="6dp" android:clickable="true" android:focusable="true">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/setting_icon_yellow"
+                    android:gravity="center"
+                    android:text="&#x2139;&#xFE0F;" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Uygulama Hakkında" android:textSize="14sp" android:textStyle="bold"
+                        android:textColor="@color/textPrimary"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="v1.0.0" android:textSize="11sp" android:textColor="@color/textSecondary"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="&#8250;" android:textSize="20sp" android:textColor="@color/textSecondary"/>
+            </LinearLayout>
+
+            <!-- TEHLİKELİ BÖLGE -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="TEHLİKELİ BÖLGE" android:textSize="10sp" android:textStyle="bold"
+                android:textColor="@color/textSecondary" android:letterSpacing="0.15"
+                android:layout_marginStart="20dp" android:layout_marginTop="16dp" android:layout_marginBottom="8dp"/>
+
+            <LinearLayout android:id="@+id/itemReset" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal"
+                android:gravity="center_vertical" android:background="@drawable/card_normal_themed"
+                android:padding="14dp" android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="6dp" android:clickable="true" android:focusable="true">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/setting_icon_yellow"
+                    android:gravity="center"
+                    android:text="&#x1F5D1;&#xFE0F;" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Veriyi Sıfırla" android:textSize="14sp" android:textStyle="bold"
+                        android:textColor="#FF4F4F"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Geri alınamaz" android:textSize="11sp" android:textColor="@color/textSecondary"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="&#8250;" android:textSize="20sp" android:textColor="#FF4F4F"/>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/itemLogout" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal"
+                android:gravity="center_vertical" android:background="@drawable/card_normal_themed"
+                android:padding="14dp" android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="60dp" android:clickable="true" android:focusable="true">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/setting_icon_yellow"
+                    android:gravity="center"
+                    android:text="&#x1F6AA;" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Çıkış Yap" android:textSize="14sp" android:textStyle="bold"
+                        android:textColor="#FF4F4F"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Hesabından çıkış yap" android:textSize="11sp"
+                        android:textColor="@color/textSecondary"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="&#8250;" android:textSize="20sp" android:textColor="#FF4F4F"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout android:id="@+id/bottomNav" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal"
+        android:background="@color/navBg" android:paddingTop="10dp" android:paddingBottom="24dp"
+        android:elevation="12dp" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout android:id="@+id/btnNavHome" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:orientation="vertical" android:gravity="center"
+            android:clickable="true" android:focusable="true">
+            <FrameLayout android:layout_width="48dp" android:layout_height="32dp" android:layout_marginBottom="5dp">
+                <ImageView android:layout_width="22dp" android:layout_height="22dp"
+                    android:layout_gravity="center" android:src="@drawable/ic_nav_home"
+                    app:tint="@color/textSecondary"/>
+            </FrameLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Ana Sayfa" android:textSize="10sp" android:textColor="@color/textSecondary"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/btnNavTracking" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:orientation="vertical" android:gravity="center"
+            android:clickable="true" android:focusable="true">
+            <FrameLayout android:layout_width="48dp" android:layout_height="32dp" android:layout_marginBottom="5dp">
+                <ImageView android:layout_width="22dp" android:layout_height="22dp"
+                    android:layout_gravity="center" android:src="@drawable/ic_nav_tracking"
+                    app:tint="@color/textSecondary"/>
+            </FrameLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Takip" android:textSize="10sp" android:textColor="@color/textSecondary"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/btnNavWorlds" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:orientation="vertical" android:gravity="center"
+            android:clickable="true" android:focusable="true">
+            <FrameLayout android:layout_width="52dp" android:layout_height="36dp"
+                android:background="@drawable/nav_center_pill" android:layout_marginBottom="5dp">
+                <ImageView android:layout_width="22dp" android:layout_height="22dp"
+                    android:layout_gravity="center" android:src="@drawable/ic_nav_world" app:tint="#FFFFFF"/>
+            </FrameLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Bölümler" android:textSize="10sp"
+                android:textColor="@color/textPrimary" android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/btnNavChat" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:orientation="vertical" android:gravity="center"
+            android:clickable="true" android:focusable="true">
+            <FrameLayout android:layout_width="48dp" android:layout_height="32dp" android:layout_marginBottom="5dp">
+                <ImageView android:layout_width="22dp" android:layout_height="22dp"
+                    android:layout_gravity="center" android:src="@drawable/ic_nav_cat"
+                    app:tint="@color/textSecondary"/>
+            </FrameLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Rehber Simit" android:textSize="10sp" android:textColor="@color/textSecondary"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/btnNavSettings" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:orientation="vertical" android:gravity="center"
+            android:clickable="true" android:focusable="true">
+
+            <FrameLayout
+                android:layout_width="48dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/nav_active_bg">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_nav_settings"
+                    app:tint="@color/colorPrimary" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ayarlar"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

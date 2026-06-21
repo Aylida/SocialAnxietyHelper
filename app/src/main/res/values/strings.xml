@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Social Anxiety Helper</string>
+    <string name="level_label">LEVEL %d</string>
+    <string name="btn_done">I DID IT!</string>
+    <string name="success_msg">Great! Your confidence is growing! ✨</string>
+
+    <string name="currency_unit">⚓ Anchor</string>
+    <string name="insufficient_balance">Not enough Anchors!</string>
+</resources>

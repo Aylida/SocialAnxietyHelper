@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sosyal Anksiyete Yardımcısı</string>
+    <string name="level_label">SEVİYE %d</string>
+    <string name="btn_done">YAPTIM!</string>
+    <string name="success_msg">Harika! Özgüvenin artıyor! ✨</string>
+
+    <string name="currency_unit">⚓ Çapa</string>
+    <string name="insufficient_balance">Yeterli Çapan yok!</string>
+</resources>

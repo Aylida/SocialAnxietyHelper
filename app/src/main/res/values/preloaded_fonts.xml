@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/alata</item>
+        <item>@font/alike</item>
+        <item>@font/amiri</item>
+        <item>@font/amiri_bold</item>
+        <item>@font/aoboshi_one</item>
+        <item>@font/bangers</item>
+        <item>@font/krona_one</item>
+        <item>@font/lilita_one</item>
+        <item>@font/lusitana_bold</item>
+        <item>@font/nova_slim</item>
+        <item>@font/playfair_bold</item>
+        <item>@font/playfair_display_bold</item>
+        <item>@font/protest_riot</item>
+    </array>
+</resources>

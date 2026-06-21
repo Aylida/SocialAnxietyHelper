@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="?attr/appBgColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚓"
+            android:textSize="52sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CESARET KOÇU"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="?attr/textSecondaryColor"
+            android:letterSpacing="0.15"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sosyal cesaretin\nyeni adresi."
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="?attr/textPrimaryColor"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Küçük adımlar, büyük değişimler.\nHer gün biraz daha cesur."
+            android:textSize="14sp"
+            android:textColor="?attr/textSecondaryColor"
+            android:lineSpacingMultiplier="1.6"
+            android:layout_marginBottom="32dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/glass_card_light"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+                <TextView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:text="🎮"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/pill_yellow"
+                    android:layout_marginEnd="14dp"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Oyun gibi ilerle"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="?attr/textPrimaryColor"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Her görev seni bir adım ileriye taşır"
+                        android:textSize="12sp"
+                        android:textColor="?attr/textSecondaryColor"
+                        android:layout_marginTop="2dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+                <TextView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:text="🌱"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/pill_green"
+                    android:layout_marginEnd="14dp"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gerçek hayatta büyü"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="?attr/textPrimaryColor"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Görevler seni sosyal hayata hazırlar"
+                        android:textSize="12sp"
+                        android:textColor="?attr/textSecondaryColor"
+                        android:layout_marginTop="2dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:text="⚓"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/pill_pink"
+                    android:layout_marginEnd="14dp"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Çapalar kazan"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="?attr/textPrimaryColor"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Başarıların ödüllendirilir"
+                        android:textSize="12sp"
+                        android:textColor="?attr/textSecondaryColor"
+                        android:layout_marginTop="2dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+
+    <!-- Ana alev gövdesi -->
+    <path
+        android:pathData="M16,3C16,3 20,9 20,13C20,13 22,11 21,8C21,8 26,12 26,18C26,23.52 21.52,28 16,28C10.48,28 6,23.52 6,18C6,14 9,11 9,11C9,11 8,16 11,17C11,17 10,13 13,10C13,10 13,15 16,16C16,16 13,12 16,3Z"
+        android:fillColor="#C4713A"/>
+
+    <!-- İç parlama -->
+    <path
+        android:pathData="M16,20C16,20 18,18 18,16.5C18,16.5 17,17 16.5,16C16.5,16 15,17.5 15,19C15,20.1 15.45,21 16,21.5C16.55,21 17,20.1 17,19C17,19 16,20 16,20Z"
+        android:fillColor="#F5C842"/>
+
+</vector>

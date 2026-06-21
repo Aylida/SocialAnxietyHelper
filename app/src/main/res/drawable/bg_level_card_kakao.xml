@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Ana gradient -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#EDE0D0"
+                android:endColor="#D4BFA0"
+                android:angle="145"
+                android:type="linear"/>
+        </shape>
+    </item>
+    <!-- Sağ üst dekoratif daire -->
+    <item
+        android:top="-60dp"
+        android:right="-60dp"
+        android:bottom="60dp"
+        android:left="60dp">
+        <shape android:shape="oval">
+            <solid android:color="#22FFFFFF"/>
+        </shape>
+    </item>
+</layer-list>

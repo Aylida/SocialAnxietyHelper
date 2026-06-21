@@ -1,0 +1,16 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Alt gölge (3D efekti) -->
+    <item android:top="5dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#A8224E" />
+            <corners android:radius="22dp" />
+        </shape>
+    </item>
+    <!-- Üst yüzey -->
+    <item android:bottom="5dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#E05080" />
+            <corners android:radius="22dp" />
+        </shape>
+    </item>
+</layer-list>

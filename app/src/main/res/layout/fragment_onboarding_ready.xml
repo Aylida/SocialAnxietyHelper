@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="?attr/appBgColor">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="48dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="?attr/cardBgColor">
+        <ImageView
+            android:id="@+id/imgReadyChar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatarmaker_1"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADIM 3 / 3"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="?attr/textSecondaryColor"
+        android:letterSpacing="0.12"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/txtReadyGreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Merhaba!"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="?attr/textPrimaryColor"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yolculuğun başlıyor.\nHer adım seni daha cesur kılar."
+        android:textSize="14sp"
+        android:textColor="?attr/textSecondaryColor"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.6"
+        android:layout_marginBottom="32dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8 Bölüm"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#1A1714"
+            android:background="@drawable/pill_yellow"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120 Görev"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/pill_pink"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚓ Çapa"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/pill_green"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="8dp"/>
+    </LinearLayout>
+</LinearLayout>
